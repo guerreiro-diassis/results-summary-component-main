@@ -1,0 +1,70 @@
+@media (max-width: 375px) {
+    .container .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "results"
+            " summary";
+        height: 100vh;
+        width: 100%;
+        box-shadow: 10px 10px 50px lightgrey;
+        border-radius: 0;
+    }
+
+    .container .card .results {
+        border-radius: 0 0 8% 8%;
+        height: 45vh;
+    }
+
+    .container .card .results .section-title {
+        font-size: 14px;
+    }
+
+    .container .card .results .general-score {
+        height: 120px;
+        width: 120px;
+    }
+
+    .container .card .results .general-score .your-score {
+        font-size: 42px;
+    }
+
+    .container .card .results .general-score .maximum-score {
+        font-size: 14px;
+    }
+
+    .container .card .results .score-classification {
+        font-size: 18px;
+    }
+
+    .container .card .results .score-description {
+        font-size: 14px;
+        padding: 0 18% 3% 18%;
+    }
+
+    .container .card .summary {
+        justify-content: space-between;
+    }
+        
+    .container .card .summary .section-title {
+        font-size: 16px;
+    }
+
+    .container .card .summary .specific-scores {
+        gap: 10px;
+    }
+
+    .container .card .summary .specific-scores .specific-area {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .container .card .btn {
+        width: 78%;
+        height: 45px;
+        font-size: 14px;
+        background-color: var(--dark-gray-blue);
+        margin-bottom: 5%;
+        border: none;
+    }
+}

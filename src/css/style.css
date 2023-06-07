@@ -1,0 +1,192 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "results summary";
+    height: 510px;
+    width: 740px;
+    box-shadow: 10px 10px 50px lightgrey;
+    border-radius: 8%;
+}
+
+/* RESULTS */ 
+.container .card .results {
+    grid-area: results;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8%;
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+}
+
+/* RESULTS-TITLE*/
+.container .card .results .section-title {
+    color: var(--light-lavender);
+}
+
+/* RESULTS-CIRCLE*/
+.container .card .results .general-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+}
+
+.container .card .results .general-score .your-score {
+    color: white;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.container .card .results .general-score .maximum-score {
+    color: var(--light-lavender);
+    font-size: 18px;
+}
+
+/* SCORE-CLASSIFICATION*/
+.container .card .results .score-classification {
+    color: white;
+    font-size: 32px;
+}
+
+/* SCORE-DESCRIPTION*/
+.container .card .results .score-description {
+    color: var(--light-lavender);
+    text-align: center;
+    font-size: 18px;
+    padding: 0 15% 3% 15%;
+}
+
+/* SUMMARY-CARD*/
+.container .card .summary {
+    grid-area: summary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    margin-left: 10%;
+}
+
+/* SUMMARY-TITLE*/
+.container .card .summary .section-title {
+    color: var(--dark-gray-blue);
+    margin-top: 2%;
+}
+
+/* SUMMARY-SCORES*/
+.container .card .summary .specific-scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 87%;
+    height: 50%;
+    list-style-type: none;
+}
+
+/* SUMMARY-GENERAL-AREAS */
+.container .card .summary .specific-scores .specific-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* SUMMARY-PONTUATION */
+.container .card .summary .specific-scores .your-pontuation {
+    font-weight: 800;
+    margin-right: 6%;
+}
+
+.container .card .summary .specific-scores .maximum-pontuation {
+    color: var(--light-lavender);
+}
+
+.container .card .summary .specific-scores img {
+    margin-left: 4%;
+}
+
+/* REACTION-PONTUATION */
+.container .card .summary .specific-scores .reaction-area {
+    background-color: hsl(6,100%,98.04%);
+}
+
+.container .card .summary .specific-scores .reaction {
+    margin-right: 22%;
+    color: var(--light-red);
+    font-weight: 700;
+}
+
+/* MEMORY-PONTUATION */
+.container .card .summary .specific-scores .memory-area {
+    background-color: hsl(41.54,100%,97.45%);
+}
+
+.container .card .summary .specific-scores .memory {
+    margin-right: 22%;
+    color: var(--orangey-yellow);
+    font-weight: 700;
+}
+
+/* VERBAL-PONTUATION */
+.container .card .summary .specific-scores .verbal-area {
+    background-color: hsl(173.33,52.94%,96.67%);
+}
+
+.container .card .summary .specific-scores .verbal {
+    margin-right: 30%;
+    color: var(--green-teal);
+    font-weight: 700;
+}
+
+/* VISUAL-PONTUATION */
+.container .card .summary .specific-scores .visual-area {
+    background-color: hsl(240,71.43%,97.25%);
+}
+
+.container .card .summary .specific-scores .visual {
+    margin-right: 30%;
+    color: var(--cobalt-blue);
+    font-weight: 700;
+}
+
+/* BUTTON */ 
+.container .card .btn {
+    width: 87%;
+    height: 55px;
+    border-radius: 30px;
+    color: var(--pale-blue);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--dark-gray-blue);
+    margin-bottom: 5%;
+    border: none;
+}
+
+.container .card .btn:hover {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
